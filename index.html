@@ -10,9 +10,8 @@
 
 	<!-- Bootstrap styly -->
 	<!-- Toto je styl stažený ze stránek Bootstrapu a přidaný do složky našeho projektu, ale mohli bychom místo toho mít i styl napojený přímo z CDN v internetu -->
-	<!--
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	-->
 
 	<!-- naše CSS styly -->
 	<link rel="stylesheet" href="css/style.css">
@@ -21,48 +20,66 @@
 
 
 	<!-- Hlavicka -->
-	<h1>Kadeřnictví Scissors <small>(není opravdové)</small></h1>
+	<nav class="navbar navbar-expand bg-light">
+				<div class="col-6 navbar-header">
+					<h1>Kadeřnictví Scissors <small>(není opravdové)</small></h1>
+				</div>
 
-
-
-	<!-- Hlavni menu -->
-	<ul>
-		<li><a href="#kadernice">Kadeřnice</a></li>
-		<li><a href="#sluzby">Služby</a></li>
-		<li><a href="#reference">Řekli o nás</a></li>
-		<li><a href="#fotogalerie">Fotogalerie</a></li>
-		<li><a href="#kontakt">Kontakt</a></li>
-	</ul>
-
-
+				<!-- Hlavni menu -->
+				<div class="col-6">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active" href="#kadernice">Kadeřnice</a></li>
+					<li class="nav-item"><a class="nav-link" href="#sluzby">Služby</a></li>
+					<li class="nav-item"><a class="nav-link" href="#reference">Řekli o nás</a></li>
+					<li class="nav-item"><a class="nav-link" href="#fotogalerie">Fotogalerie</a></li>
+					<li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+				</ul>
+			</div>
+	</nav>
 
 	<!-- Obrazek -->
-	<img src="images/carousel1.jpg" alt="Kadeřnictví">
 
+		<img class="img-fluid"	src="images/carousel1.jpg" alt="Kadeřnictví">
 
 
 	<!-- Akce, novinky -->
-	<h2>Akce -30&nbsp;%</h2>
-	<p>Květen je měsíc vlasů. Přijď ho s námi oslavit a <strong>získej slevu 30&nbsp;%</strong> na všechny naše služby. Ohrom své přátele novým účesem.</p>
-
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Akce -30&nbsp;%</h2>
+			</div>
+			<div class="col-md-8">
+				<p>Květen je měsíc vlasů. Přijď ho s námi oslavit a <strong>získej slevu 30&nbsp;%</strong> na všechny naše služby. Ohrom své přátele novým účesem.</p>
+			</div>
+		</div>
+	</div>
 
 	<!-- Kadernice -->
+	<div class="container">
+		<div class="row">
+			<h2 id="kadernice">Naše kadeřnice</h2>
+		</div>
+	</div>
 
-	<h2 id="kadernice">Naše kadeřnice</h2>
-
-	<img src="images/kadernice-helena.jpg" alt="Helena Králíková">
-	<h3>Helena Králíková</h3>
-	<p>Kadeřnice s více než patnáctiletou praxí, jedna ze zakladatelek české kadeřnické akademie. Specialistka na exotické účesy pro zvláštní příležitosti.</p>
-
-	<img src="images/kadernice-eliska.jpg" alt="Eliška Dvořáková">
-	<h3>Eliška Dvořáková</h3>
-	<p>Držitelka několika národních i mezinárodních ocenění, mimo jiné i Kadeřnice roku a Účes roku. Spolupracuje s předními českými i světovými kadeřníky.</p>
-
-	<img src="images/kadernice-jarmila.jpg" alt="Jarmila Prokopová">
-	<h3>Jarmila Prokopová</h3>
-	<p>Specialistka na pánské a dětské střihy se zkušenostmi s česáním módních přehlídek a vlasových show. Certifikovaná odbornice na modeláž nehtů.</p>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="images/kadernice-helena.jpg" alt="Helena Králíková">
+				<h3>Helena Králíková</h3>
+				<p>Kadeřnice s více než patnáctiletou praxí, jedna ze zakladatelek české kadeřnické akademie. Specialistka na exotické účesy pro zvláštní příležitosti.</p>
+			</div>
+			<div class="col-md-4"">
+				<img src="images/kadernice-eliska.jpg" alt="Eliška Dvořáková">
+				<h3>Eliška Dvořáková</h3>
+				<p>Držitelka několika národních i mezinárodních ocenění, mimo jiné i Kadeřnice roku a Účes roku. Spolupracuje s předními českými i světovými kadeřníky.</p>
+			</div>
+			<div class="col-md-4"">
+				<img src="images/kadernice-jarmila.jpg" alt="Jarmila Prokopová">
+				<h3>Jarmila Prokopová</h3>
+				<p>Specialistka na pánské a dětské střihy se zkušenostmi s česáním módních přehlídek a vlasových show. Certifikovaná odbornice na modeláž nehtů.</p>
+			</div>
+		</div>
+	</div>
 	<!-- konec #kadernice -->
 
 
@@ -238,9 +255,9 @@
 
 	<!-- Volitelný JavaScript (nutný pro aktivní komponenty) -->
 	<!-- Toto je JavaScript stažený ze stránek Bootstrapu a přidaný do složky našeho projektu, ale mohli bychom místo toho mít i skript napojený přímo z CDN v internetu -->
-	<!--
+
 	<script src="js/bootstrap.bundle.min.js"></script>
-	-->
+
 
 </body>
 </html>
